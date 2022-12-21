@@ -33,8 +33,9 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
+    height: 100vh;
     gap: 80px;
+
 }
 
 img{
@@ -46,7 +47,6 @@ img{
     flex-direction: column;
     align-items: center;
     height: 30rem;
-
 }
 .welcome-desc h1{
     font-size: 7rem;
@@ -61,6 +61,7 @@ a{
 }
 
 /*Second-page*/
+
 .scd-img{
     width: 55.2rem;
 }
@@ -71,6 +72,7 @@ a{
     align-items: center;
     width: 47rem;
     gap: 2rem;
+    
 }
 .second-desc p{
     padding: 1.5rem;
@@ -110,8 +112,6 @@ a{
         justify-content: center;
         text-align: center;
         min-height: 100vh;
-        padding-left: 10.5%;
-        padding-right:10.5%;
         gap: 25px;
     }
     
@@ -156,14 +156,17 @@ a{
 
 .scd-img{
     width: 40rem;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
 }
 
 .second-desc{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
     height: 26rem;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
 }
 .second-desc .scd-infos{
     height: 100%;
@@ -186,7 +189,8 @@ a{
     width: 100%;
     gap: 1.8rem;
 }
-.btn{
+.buttons-second .btn{
+    height: 2.6rem;
     width: 14rem;
     font-size: 1.5rem;
 }

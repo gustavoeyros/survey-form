@@ -202,6 +202,11 @@ a{
 
 /* ------------- Mobile - Galaxy Fold ------------- */
 @media screen and (max-width: 297px){
+
+    main{
+       padding-top: 5%;
+       padding-bottom: 5%;
+    }
     .buttons-second .btn{
         height: 2.6rem;
         width: 14rem;

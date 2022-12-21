@@ -38,13 +38,19 @@ img{
 }
 
 /*Button*/
+a{
+    text-decoration: none;
+}
 .lets-button{
     width: 20rem;
     height: 2.8rem;
     font-size: 1.9rem;
     border-radius: 1.6rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-
     border: none;
     background-color: #3EB25E;
     color: white;

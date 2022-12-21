@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto'
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    
+    min-height: 100vh;
+}
+
+
+img{
+    width: 16rem;
+    height: 26rem;
+}
+
+
+/* Description */
+.welcome-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15rem;
+}
+.welcome-desc h1{
+   font-size: 3.5rem;
+}
+.welcome-desc p{
+    font-size: 1.5rem;
+}

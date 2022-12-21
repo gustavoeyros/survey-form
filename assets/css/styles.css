@@ -60,11 +60,47 @@ a{
     text-decoration: none;
 }
 
+/*Second-page*/
+.scd-img{
+    width: 55.2rem;
+}
+.second-desc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 47rem;
+    gap: 2rem;
+}
+.second-desc p{
+    padding: 1.5rem;
+    text-align: center;
+}
 
-/*Second page*/
+.scd-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.second-desc h1{
+    font-size: 3.9rem;
+}
+.second-desc p{
+    font-size: 2.8rem;
+}
+.buttons-second{
+    display: flex;
+    justify-content: center;
+    gap: 2.7rem;
+    width: 100%;
+}
+.buttons-second .btn{
+    height: 3.6rem;
+    font-size: 2.2rem;
+    border-radius: 3.5rem;
+}
 
-
-/*Mobile*/
+/* --------------------- Mobile ---------------------*/
 @media screen and (max-width: 767px){
     /* First Page */
     main{
@@ -117,6 +153,7 @@ a{
 
     
 /* Second Page */
+
 .scd-img{
     width: 40rem;
 }
@@ -143,7 +180,7 @@ a{
 
 
 /*buttons*/
-.buttons{
+.buttons-second{
     display: flex;
     justify-content: center;
     width: 100%;

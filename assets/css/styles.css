@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
     font-size: 62.75%; /* converter 1 rem = 10px */
 }
@@ -10,11 +9,25 @@
     font-family: 'Roboto'
 }
 
+.btn{
+    width: 20rem;
+    height: 2.8rem;
+    font-size: 1.9rem;
+    border-radius: 1.6rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #3EB25E;
+    color: white;
+}
 
 
+/*Desktop*/
 
-/*Desktop - First Page*/
-
+/*First page*/
 main{
     display: flex;
     justify-content: center;
@@ -46,27 +59,14 @@ img{
 a{
     text-decoration: none;
 }
-.lets-button{
-    width: 20rem;
-    height: 2.8rem;
-    font-size: 1.9rem;
-    border-radius: 1.6rem;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    background-color: #3EB25E;
-    color: white;
-    
-}
 
 
+/*Second page*/
 
 
-/*Mobile - First Page*/
+/*Mobile*/
 @media screen and (max-width: 767px){
+    /* First Page */
     main{
         display: flex;
         flex-direction: column;
@@ -76,7 +76,7 @@ a{
         min-height: 100vh;
         padding-left: 10.5%;
         padding-right:10.5%;
-        gap: 0;
+        gap: 25px;
     }
     
     
@@ -102,7 +102,7 @@ a{
     }
     
     /*Button*/
-    .lets-button{
+   .btn .lets-button{
         width: 19.2rem;
         height: 3.6rem;
         font-size: 1.9rem;
@@ -114,5 +114,44 @@ a{
         color: white;
         
     }
+
+    
+/* Second Page */
+.scd-img{
+    width: 40rem;
+}
+
+.second-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 26rem;
+}
+.second-desc .scd-infos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.second-desc .scd-title{
+    font-size: 3rem;
+}
+.second-desc .scd-desc{
+    font-size: 1.8rem;
+}
+
+
+/*buttons*/
+.buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1.8rem;
+}
+.btn{
+    width: 14rem;
+    font-size: 1.5rem;
+}
 
 }

@@ -1,0 +1,27 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoeyros/survey-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoeyros/survey-form/issues"
+  },
+  "homepage": "https://github.com/gustavoeyros/survey-form#readme",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

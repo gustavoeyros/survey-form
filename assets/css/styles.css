@@ -387,6 +387,9 @@ input[type="radio"]:checked{
     width: 100%;
     height: 26px;
 }
+.trd-img{
+    width: 360px;
+}
 
 
 /*Fourth - Page */
@@ -396,6 +399,13 @@ input[type="radio"]:checked{
     gap: 30px;
     text-align: left;
 }
+
+.frt-img{
+    width: 380px;
+}
+
+
+
 
 }
 

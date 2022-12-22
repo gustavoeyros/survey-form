@@ -573,13 +573,40 @@ input[type="checkbox"]:checked{
 
 
 /*Sixth Page*/
-
+.sixth-desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sixth-form{
+display: flex;
+   flex-direction: column;
+   gap: 10px; 
+}
 .sixth-img{
     width: 374px;
 }
-
+.input-title{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 1rem;
 }
-
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+.input-field{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 70%;
+    height: 3.3rem;
+    padding-left: 1rem;
+}
 /* ------------- Mobile - Galaxy Fold ------------- */
 @media screen and (max-width: 297px){
 

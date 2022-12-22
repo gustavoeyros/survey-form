@@ -502,11 +502,33 @@ input[type="checkbox"]:checked{
     align-items: center;
 }
 
+/*Fifth Page*/
+.area-fifth{
+    resize: none;
+    width: 278px;
+    height: 131px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);;
+}
+.fifth-title{
+    width: 261px;
+    text-align: left;
+}
 
-
+.fifth-img{
+    width: 360px;
+}
+.first-row-buttons .btn{
+  width: 45%;
+}
+.fifth-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 
+}
 
 /* ------------- Mobile - Galaxy Fold ------------- */
 @media screen and (max-width: 297px){

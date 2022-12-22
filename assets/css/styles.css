@@ -258,6 +258,36 @@ input[type="checkbox"]:checked{
 
 
 
+/*Fifth Page*/
+.fifth-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.area-fifth{
+    resize: none;
+    width: 459px;
+    height: 259px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.buttons-fifth{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 60px;
+}
+.fifth-title{
+    width: 466px;
+    text-align: left;
+}
+.fifth-title h1{
+    font-size: 26px;
+}
+
+
 /* --------------------- Mobile ---------------------*/
 @media screen and (max-width: 767px){
     /* First Page */
@@ -516,7 +546,7 @@ input[type="checkbox"]:checked{
 }
 
 .fifth-img{
-    width: 360px;
+    width: 340px;
 }
 .first-row-buttons .btn{
   width: 45%;
@@ -526,7 +556,17 @@ input[type="checkbox"]:checked{
     flex-direction: column;
     gap: 2rem;
 }
-
+.buttons-fifth{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 0;
+}
+.fifth-title h1{
+    font-size: 16px;
+}
 
 }
 

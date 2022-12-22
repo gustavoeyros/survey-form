@@ -368,7 +368,7 @@ input[type="radio"]:checked{
 
 .first-row-buttons{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 .first-row-buttons .btn{
@@ -396,15 +396,46 @@ input[type="radio"]:checked{
 .fourth-page{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     text-align: left;
+    width: 302px;
 }
 
 .frt-img{
     width: 380px;
 }
+.resources-desc{
+    font-size: 16px;
+    font-weight: 700;
+    width: 261px;
+}
+.check-options{
+    font-size: 1.6rem;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 0.7rem;
+    align-items: center;
+}
+.check-container{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
 
+input[type="checkbox"]{
+    appearance: none;
+    background-color: rgba(62, 178, 94, 0.3);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2px;
+}
+input[type="checkbox"]:checked{
+    background-color: rgba(19, 146, 83, 0.979);
+    transition: 0.4s;
+}
 
 
 }

@@ -35,11 +35,12 @@ main{
     text-align: center;
     height: 100vh;
     gap: 80px;
+    width: 100%;
 
 }
 
 img{
-    width: 5523px;
+    width: 552px;
 }
 .welcome-desc{
     display: flex;
@@ -102,6 +103,103 @@ a{
     font-size: 2.2rem;
     border-radius: 3.5rem;
 }
+
+
+/*Third Page*/
+
+.third-page{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+}
+.third-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} 
+.select-container{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    text-align: left;
+}
+.select-container p{
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+}
+.status-container{
+    display: flex;
+    flex-direction: column;
+}
+.select-options{
+    font-size: 1.6rem;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+
+.options-title{
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.options{
+    display: flex;
+   text-align: center;
+    border-radius: 1.5rem;
+    height: 3.3rem;
+    width: 459px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    outline: 0;
+
+    appearance: none;
+    background-image: url('../img/arrow-third-page.svg');
+    background-repeat: no-repeat;
+    background-position: 8% center;
+}
+
+input[type="radio"]{
+    appearance: none;
+    background-color: rgba(62, 178, 94, 0.3);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+input[type="radio"]:checked{
+    background-color: rgba(19, 146, 83, 0.979);
+    transition: 0.4s;
+}
+
+
+.first-row-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.first-row-buttons .btn{
+    width: 230px;
+    height: 36px;
+    gap: 18px;
+}
+.buttons-third{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+}
+.btn-skip{
+    width: 100%;
+    height: 36px;
+}
+
+
 
 /* --------------------- Mobile ---------------------*/
 @media screen and (max-width: 767px){
@@ -205,6 +303,11 @@ a{
     flex-direction: column;
     gap: 20px;
 }
+.third-form{
+    display: auto;
+    flex-direction: auto;
+    gap: 1px;
+} 
 .select-container{
     display: flex;
     flex-direction: column;
@@ -225,6 +328,7 @@ a{
     flex-direction: row-reverse;
     justify-content: left;
     gap: 0.7rem;
+    align-items: center;
 }
 
 
@@ -240,6 +344,7 @@ a{
     height: 3.3rem;
     width: 278px;
     border: 1px solid rgba(0, 0, 0, 0.25);
+    outline: 0;
 
     appearance: none;
     background-image: url('../img/arrow-third-page.svg');
@@ -247,6 +352,40 @@ a{
     background-position: 8% center;
 }
 
+input[type="radio"]{
+    appearance: none;
+    background-color: rgba(62, 178, 94, 0.3);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+input[type="radio"]:checked{
+    background-color: rgba(19, 146, 83, 0.979);
+    transition: 0.4s;
+}
+
+
+.first-row-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.first-row-buttons .btn{
+    width: 142px;
+    height: 26px;
+    gap: 18px;
+}
+.buttons-third{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+}
+.btn-skip{
+    width: 100%;
+    height: 26px;
+}
 
 
 }

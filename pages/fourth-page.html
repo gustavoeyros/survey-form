@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <script src="dist/app.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <main>
+        <figure>
+            <img src="../assets/img/fourth-page.svg" class="trd-img">
+        </figure>
+
+        <article class="fourth-page">
+            <div class="status-container">
+                <label for="options" class="options-title"><div class="arrow"></div>How do you decide to invest?</label>
+                <select name="options" id="options" class="options">
+                    <option value="not-created-account">I have not invested yet.</option>
+                    <option value="account-created">I already have an account</option>
+                </select>
+            </div>
+
+
+            <div class="check-container">
+                <p>What resources have you used or are you using for you training?</p>
+
+                <form>
+                    <div class="check-options">
+                        <label for="books-articles">Books and articles</label>
+                        <input type="checkbox" id="books-articles">
+                    </div>
+
+                    <div class="check-options">
+                        <label for="youtube-videos">Youtube tutorial videos</label>
+                        <input type="checkbox" id="youtube-videos">
+                    </div>
+
+                    <div class="check-options">
+                        <label for="online-courses">online or face to face courses</label>
+                        <input type="checkbox" id="online-courses">
+                    </div>
+
+                    <div class="check-options">
+                        <label for="experience-investment">experience with little investment</label>
+                        <input type="checkbox" id="experience-investment">
+                    </div>
+
+
+                </form>
+            </div>
+        
+
+            <div class="buttons-third">
+            <div class="first-row-buttons">
+                <button class="btn">Back</button>
+                <button class="btn">Next</button>
+            </div>
+            <button class="btn btn-skip">Skip</button>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>

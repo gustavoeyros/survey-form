@@ -39,7 +39,7 @@ main{
 }
 
 img{
-    width: 30rem;
+    width: 5523px;
 }
 .welcome-desc{
     display: flex;
@@ -196,9 +196,55 @@ a{
     font-size: 1.5rem;
 }
 
+
+
+/* Third Page */
+.third-page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.select-container{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    text-align: left;
+}
+.select-container p{
+    font-size: 1.6rem;
+}
+.status-container{
+    display: flex;
+    flex-direction: column;
+}
+.select-options{
+    font-size: 1.6rem;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 0.7rem;
 }
 
 
+.options-title{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.options{
+    display: flex;
+   text-align: center;
+    border-radius: 2rem;
+    height: 3.3rem;
+    width: 278px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+
+    appearance: none;
+    background-image: url('../img/arrow-third-page.svg');
+    background-repeat: no-repeat;
+    background-position: 8% center;
+}
+}
 
 /* ------------- Mobile - Galaxy Fold ------------- */
 @media screen and (max-width: 297px){

@@ -291,6 +291,71 @@ input[type="checkbox"]:checked{
 }
 
 
+
+/*Sixth Page*/
+.sixth-desc{
+    display: flex;
+    flex-direction: column;
+    
+} 
+.sixth-form{
+display: flex;
+   flex-direction: column;
+   gap: 10px; 
+}
+.sixth-img{
+    width: 552px;
+}
+.input-title{
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+.input-field{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 70%;
+    height: 3.3rem;
+    padding-left: 1rem;
+}
+.input-field-age{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 30%;
+    height: 3.3rem;
+    padding-left: 1rem;
+}
+
+.buttons-sixth{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+.buttons-sixth button{
+    background-color: #3EB25E;
+    outline: 0;
+    border: none;
+    border-radius: 35px;
+    width: 100%;
+    height: 3.6rem;
+    color: white;
+
+}
+
+
+
+
 /* --------------------- Mobile ---------------------*/
 @media screen and (max-width: 767px){
     /* First Page */
@@ -587,7 +652,7 @@ display: flex;
     width: 374px;
 }
 .input-title{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     text-align: left;
     padding-left: 1rem;
@@ -603,17 +668,19 @@ display: flex;
     border: 1px solid rgba(0, 0, 0, 0.25);
     color: rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    width: 70%;
-    height: 3.3rem;
-    padding-left: 1rem;
+    width: 90%;
+    height: 3rem;
+    padding: 2rem;
+    font-size: 1.6rem;
 }
 .input-field-age{
     border: 1px solid rgba(0, 0, 0, 0.25);
     color: rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     width: 30%;
-    height: 3.3rem;
+    height: 5.2rem;
     padding-left: 1rem;
+    font-size: 2.7rem;
 }
 
 .buttons-submit{

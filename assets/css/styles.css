@@ -71,7 +71,6 @@ img{
 .buttons-first .lets-button{
     height: 40px;
     width: 48%;
-    color: #3EB25E;
 }
 
 /*Button - First Page*/
@@ -765,6 +764,23 @@ display: flex;
         font-size: 1.15rem;
         padding-left: 1rem;
     }
+
+    /*Fourth Page*/
+   .fourth-page{
+    padding-left: 5%;
+    padding-right: 5%;
+   }
+   .fourth-page .check-container{
+    padding-left: 5%;
+    padding-right: 5%;
+   }
+   .status-container .options-title{
+    text-align: center;
+   }
+   .fourth-page .buttons-fourth{
+    padding: 2.5%;
+   }
+
 }
 
 /* --------------- Tablet --------------- */

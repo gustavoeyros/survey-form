@@ -626,18 +626,18 @@ input[type="checkbox"]:checked{
 /*Fifth Page*/
 .area-fifth{
     resize: none;
-    width: 278px;
+    width: 100%;
     height: 131px;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25);;
 }
 .fifth-title{
-    width: 261px;
+    width: 100%;
     text-align: left;
 }
 
 .fifth-img{
-    width: 320px;
+    width: 100%;
 }
 .first-row-buttons .btn{
   width: 45%;
@@ -841,7 +841,7 @@ display: flex;
     width: 100%;
    }
    .check-options{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: normal;
     display: flex;
     flex-direction: row-reverse;
@@ -849,6 +849,7 @@ display: flex;
     padding-top: 1rem;
     align-items: center;
 }
+
 
 
 /*Fifth Page*/
@@ -882,6 +883,11 @@ display: flex;
     }
     .first-row-buttons .btn{
         width: 45%;
+    }
+
+    /*Fourth Page*/
+    .fourth-page{
+        padding-right: 5%;
     }
 }
 

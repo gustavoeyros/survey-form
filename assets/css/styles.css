@@ -331,7 +331,7 @@ input[type="checkbox"]:checked{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 0.5rem;
+    gap: 2rem;
 }
 .input-field{
     border: 1px solid rgba(0, 0, 0, 0.25);
@@ -672,7 +672,7 @@ display: flex;
    gap: 10px; 
 }
 .sixth-img{
-    width: 374px;
+    width: 100%;
 }
 .input-title{
     font-size: 1.6rem;
@@ -717,7 +717,7 @@ display: flex;
     outline: 0;
     border: none;
     border-radius: 35px;
-    width: 30rem;
+    width: 100%;
     height: 2.6rem;
     color: white;
 }
@@ -867,7 +867,29 @@ display: flex;
 .fifth-img{
     width: 270px;
 }
+
+/*Sixth Page*/
+
+.sixth-img{
+    width: 100%;
 }
+.sixth-desc{
+    width: 100%;
+}
+.input-field{
+    width: 100%;
+}
+.input-field-age{
+    width: 40%;
+}
+.buttons-sixth button{
+    width: 100%;
+}
+
+
+}
+
+
 
 /* ------------- Laptop ------------------ */
 @media (min-width: 1024px){
@@ -907,6 +929,24 @@ display: flex;
     .fifth-img{
         width: 100%;
       }
+
+    /*Sixth Page*/
+    .sixth-img{
+        width: 100%;
+    }
+    .sixth-desc{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .input-field{
+        width: 100%;
+    }
+    .input-field-age{
+        width: 40%;
+    }
+    .buttons-sixth button{
+        width: 100%;
+    }
 
     
 }

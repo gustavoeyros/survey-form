@@ -768,7 +768,6 @@ display: flex;
   /*Second Page*/
   .scd-img{
     width: 300px;
-    padding-left: 2rem;
   }
   .scd-infos .scd-title{
     font-size: 3rem;
@@ -787,14 +786,28 @@ display: flex;
 
 /* ------------- Laptop ------------------ */
 @media (min-width: 1024px){
+    /*First Page*/
     .first-img{
         width: 300px;
     }
+
+    /*Second Page*/
+    .scd-img{
+        width: 400px;
+    }
+    
 }
 
 /* ---------------- Laptop G ------------- */
 @media (min-width: 1440px){
+
+    /*First Page*/
   .first-img{
     width: 450px;
+  }
+
+  /*Second Page*/
+  .scd-img{
+    width: 600px;
   }
 }

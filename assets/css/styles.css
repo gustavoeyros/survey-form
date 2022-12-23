@@ -742,7 +742,7 @@ display: flex;
     }
 }
 
-/* --------------- Tablet --------------- */
+/* --------------- Tablet and Laptop --------------- */
 
 @media (min-width: 768px) and (max-width: 1025px){
   /*First page*/
@@ -753,5 +753,17 @@ display: flex;
   .info-welcome h1{
     font-size: 6rem;
   }
+  main{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
+
+
+/* ---------------- Laptop G ------------- */
+@media (min-width: 1440px){
+  .first-img{
+    width: 450px;
+  }
+}

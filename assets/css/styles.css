@@ -853,10 +853,20 @@ display: flex;
 
 
 /*Fifth Page*/
+.fifth-desc{
+    padding-right: 5%;
+}
 
+.area-fifth{
+    width: 100%;
+}
+.fifth-title{
+    width: 100%;
+}
 
-
-
+.fifth-img{
+    width: 270px;
+}
 }
 
 /* ------------- Laptop ------------------ */

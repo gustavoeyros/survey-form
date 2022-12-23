@@ -203,12 +203,16 @@ a{
 input[type="radio"]{
     appearance: none;
     background-color: rgba(62, 178, 94, 0.3);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
 }
 input[type="radio"]:checked{
     background-color: rgba(19, 146, 83, 0.979);
+    transition: 0.4s;
+}
+input[type="radio"]:hover{
+    background-color: #3EB25E;
     transition: 0.4s;
 }
 
@@ -275,6 +279,10 @@ input[type="checkbox"]{
 }
 input[type="checkbox"]:checked{
     background-color: rgba(19, 146, 83, 0.979);
+    transition: 0.4s;
+}
+input[type="checkbox"]:hover{
+    background-color: #3EB25E;
     transition: 0.4s;
 }
 

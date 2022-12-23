@@ -23,6 +23,11 @@
     background-color: #3EB25E;
     color: white;
 }
+.btn:hover{
+    background-color: #FFFF7D;
+    color: black;
+    font-weight: 700;
+}
 
 
 /*Desktop*/
@@ -170,18 +175,30 @@ a{
    text-align: center;
     border-radius: 1.5rem;
     height: 3.3rem;
-    font-size: 26px;
+    font-size: 2.6rem;
     width: 459px;
     height: 40px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     outline: 0;
-
+    padding-left: 3rem;
 
     appearance: none;
     background-image: url('../img/arrow-third-page.svg');
     background-repeat: no-repeat;
     background-position: 3% center;
+    background-size: 22px;
 }
+
+.options:hover{
+    border: 1px solid black;
+
+    appearance: none;
+    background-image: url('../img/arrow-hover.svg');
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 3% center;
+}
+
 
 input[type="radio"]{
     appearance: none;
@@ -527,10 +544,14 @@ input[type="checkbox"]:checked{
     border: 1px solid rgba(0, 0, 0, 0.25);
     outline: 0;
 
+    background-size: 14px;
     appearance: none;
     background-image: url('../img/arrow-third-page.svg');
     background-repeat: no-repeat;
     background-position: 3% center;
+}
+.options:hover{
+    background-size: 14px;
 }
 
 input[type="radio"]{

@@ -123,7 +123,6 @@ a{
 
 
 /*Third Page*/
-
 .third-page{
     display: flex;
     flex-direction: column;
@@ -228,9 +227,7 @@ input[type="radio"]:checked{
     text-align: left;
 }
 
-.frt-img{
-    width: 380px;
-}
+
 .resources-desc{
     font-size: 26px;
     font-weight: 700;
@@ -640,7 +637,7 @@ input[type="checkbox"]:checked{
 }
 
 .fifth-img{
-    width: 340px;
+    width: 320px;
 }
 .first-row-buttons .btn{
   width: 45%;
@@ -854,6 +851,11 @@ display: flex;
 }
 
 
+/*Fifth Page*/
+
+
+
+
 }
 
 /* ------------- Laptop ------------------ */
@@ -869,8 +871,17 @@ display: flex;
     }
     
     /*Third Page*/
+    .third-page{
+        padding-right: 5%;
+    }
     .trd-img{
-        width: 400px;
+        width: 100%;
+    }
+    .select-options{
+        font-size: 2.6rem;
+    }
+    .first-row-buttons .btn{
+        width: 45%;
     }
 }
 
@@ -887,3 +898,4 @@ display: flex;
     width: 600px;
   }
 }
+

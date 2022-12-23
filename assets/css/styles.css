@@ -899,6 +899,16 @@ display: flex;
     .fourth-page{
         padding-right: 5%;
     }
+
+    /*Fifth Page*/
+    .fifth-desc{
+        padding-right: 5%;
+    }
+    .fifth-img{
+        width: 100%;
+      }
+
+    
 }
 
 /* ---------------- Laptop G ------------- */
@@ -913,5 +923,8 @@ display: flex;
   .scd-img{
     width: 600px;
   }
+
+  /*Fifth Page*/
+
 }
 

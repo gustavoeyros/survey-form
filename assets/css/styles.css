@@ -746,6 +746,25 @@ display: flex;
     .first-img{
         width: 200px;
     }
+
+
+    /*Third Page*/
+    .trd-img{
+        width: 200px;
+    }
+    .select-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .status-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .options{
+        width: 100%;
+        font-size: 1.15rem;
+        padding-left: 1rem;
+    }
 }
 
 /* --------------- Tablet --------------- */

@@ -742,9 +742,9 @@ display: flex;
     }
 }
 
-/* --------------- Tablet and Laptop --------------- */
+/* --------------- Tablet --------------- */
 
-@media (min-width: 768px) and (max-width: 1025px){
+@media (min-width: 768px) and (max-width: 1023px){
   /*First page*/
   .first-img{
     width: 300px;
@@ -757,6 +757,26 @@ display: flex;
     padding-left: 10%;
     padding-right: 10%;
   }
+
+
+  /*Second Page*/
+  .scd-img{
+    width: 300px;
+    padding-left: 2rem;
+  }
+  .scd-infos .scd-title{
+    font-size: 3rem;
+  }
+  .scd-infos .scd-desc{
+    font-size: 2rem;
+  }
+  .buttons-second .btn{
+    font-size: 1.2rem;
+    padding: 25px;
+    height: 30px;
+    width: 100%;
+  }
+
 }
 
 

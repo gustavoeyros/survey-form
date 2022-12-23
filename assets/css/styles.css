@@ -44,16 +44,34 @@ img{
 }
 .welcome-desc{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 30rem;
+    height: 100vh;
+    gap: 60px;
+}
+.info-welcome{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-bottom: 44px;
 }
 .welcome-desc h1{
-    font-size: 7rem;
+    font-size: 12rem;
 }
 .welcome-desc p{
-    font-size: 2.4rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.buttons-first{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.buttons-first .lets-button{
+    height: 40px;
+    width: 48%;
+    color: #3EB25E;
 }
 
 /*Button - First Page*/
@@ -384,9 +402,10 @@ input[type="checkbox"]:checked{
     .welcome-desc{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 24rem;
+        justify-content: center;
+        height: 100%;
         align-items: center;
+        gap: 0;
     }
     
     .welcome-desc h1{
@@ -397,7 +416,7 @@ input[type="checkbox"]:checked{
     }
     
     /*Button*/
-   .btn .lets-button{
+   .buttons-first .lets-button{
         width: 19.2rem;
         height: 3.6rem;
         font-size: 1.9rem;
@@ -408,6 +427,11 @@ input[type="checkbox"]:checked{
         background-color: #3EB25E;
         color: white;
         
+    }
+    .info-welcome{
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
     }
 
     
@@ -717,3 +741,5 @@ display: flex;
 
     }
 }
+
+

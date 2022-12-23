@@ -390,11 +390,13 @@ input[type="checkbox"]:checked{
         gap: 25px;
         padding-left: 10.5%;
         padding-right: 10.5%;
+        padding-bottom: 5%;
+        padding-top: 4%;
     }
     
     
     img{
-        width: 28rem;
+        width: 24rem;
     }
     
     
@@ -740,6 +742,10 @@ display: flex;
         font-size: 1.2rem;
 
     }
+    /*First Page*/
+    .first-img{
+        width: 200px;
+    }
 }
 
 /* --------------- Tablet --------------- */
@@ -779,7 +785,12 @@ display: flex;
 
 }
 
-
+/* ------------- Laptop ------------------ */
+@media (min-width: 1024px){
+    .first-img{
+        width: 300px;
+    }
+}
 
 /* ---------------- Laptop G ------------- */
 @media (min-width: 1440px){

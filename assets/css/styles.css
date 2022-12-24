@@ -984,6 +984,7 @@ display: flex;
     }
     .input-field{
         width: 100%;
+        padding-right: 0.4px;
     }
     .input-field-age{
         width: 40%;

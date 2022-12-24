@@ -54,13 +54,20 @@ if (window.location.pathname === thirdPage) {
     "input[name='options-form']"
   )! as NodeListOf<Element>;
 
-  const x = radiosButtons.forEach((input: any) => {
+  const checkRadio = radiosButtons.forEach((input: any) => {
     input.addEventListener("click", () => {
       if (input) {
         nextButton.disabled = false;
       }
     });
   });
+
+  //check select
+  const optionsSelect = document.getElementById(
+    "options"
+  )! as HTMLSelectElement;
+
+  /*  let value = optionsSelect.options[optionsSelect.selectedIndex].value; */
 }
 
 //fourth page

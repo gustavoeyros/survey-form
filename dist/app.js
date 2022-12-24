@@ -31,13 +31,14 @@ if (window.location.pathname === thirdPage) {
         pageNavigate("/fourth-page");
     });
     const radiosButtons = document.querySelectorAll("input[name='options-form']");
-    const x = radiosButtons.forEach((input) => {
+    const checkRadio = radiosButtons.forEach((input) => {
         input.addEventListener("click", () => {
             if (input) {
                 nextButton.disabled = false;
             }
         });
     });
+    const optionsSelect = document.getElementById("options");
 }
 if (window.location.pathname === fourthPage) {
     const fourthSkipButton = document.getElementById("fourth-skip-btn");

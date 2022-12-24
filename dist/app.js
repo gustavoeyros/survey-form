@@ -26,6 +26,18 @@ if (window.location.pathname === thirdPage) {
     thirdSkipButton.addEventListener("click", () => {
         pageNavigate("/fourth-page");
     });
+    let nextButton = document.getElementById("nextButton");
+    nextButton.addEventListener("click", () => {
+        pageNavigate("/fourth-page");
+    });
+    const radiosButtons = document.querySelectorAll("input[name='options-form']");
+    const x = radiosButtons.forEach((input) => {
+        input.addEventListener("click", () => {
+            if (input) {
+                nextButton.disabled = false;
+            }
+        });
+    });
 }
 if (window.location.pathname === fourthPage) {
     const fourthSkipButton = document.getElementById("fourth-skip-btn");

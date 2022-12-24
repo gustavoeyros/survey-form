@@ -42,6 +42,25 @@ if (window.location.pathname === thirdPage) {
   thirdSkipButton.addEventListener("click", () => {
     pageNavigate("/fourth-page");
   });
+
+  let nextButton = document.getElementById("nextButton")! as HTMLButtonElement;
+  nextButton.addEventListener("click", () => {
+    pageNavigate("/fourth-page");
+  });
+
+  //check radio
+
+  const radiosButtons = document.querySelectorAll(
+    "input[name='options-form']"
+  )! as NodeListOf<Element>;
+
+  const x = radiosButtons.forEach((input: any) => {
+    input.addEventListener("click", () => {
+      if (input) {
+        nextButton.disabled = false;
+      }
+    });
+  });
 }
 
 //fourth page

@@ -304,6 +304,8 @@ input[type="checkbox"]:hover{
     gap: 10px;
 }
 .area-fifth{
+    outline: none;
+    padding: 5%;
     resize: none;
     width: 459px;
     height: 259px;
@@ -658,7 +660,7 @@ input[type="checkbox"]:checked{
     width: 100%;
     height: 131px;
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.25);;
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .fifth-title{
     width: 100%;

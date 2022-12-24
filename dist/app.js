@@ -38,6 +38,10 @@ if (window.location.pathname === fifthPage) {
     fifthSkipButton.addEventListener("click", () => {
         pageNavigate("/sixth-page");
     });
+    let nextButton = document.getElementById("nextButton");
+    nextButton.addEventListener("click", () => {
+        pageNavigate("/sixth-page");
+    });
     let textAtArea = document.getElementById("textarea-fifth");
     let result = document.getElementById("result");
     let limitText = 130;
@@ -50,6 +54,12 @@ if (window.location.pathname === fifthPage) {
         }
         else {
             result.style.color = "rgba(0, 0, 0, 0.35)";
+        }
+        if (txtLength > 0) {
+            nextButton.disabled = false;
+        }
+        else if (txtLength === 0) {
+            nextButton.disabled = true;
         }
     });
 }

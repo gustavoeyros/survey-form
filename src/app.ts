@@ -65,6 +65,12 @@ if (window.location.pathname === fifthPage) {
     pageNavigate("/sixth-page");
   });
 
+  let nextButton = document.getElementById("nextButton")! as HTMLButtonElement;
+
+  nextButton.addEventListener("click", () => {
+    pageNavigate("/sixth-page");
+  });
+
   // Character Counter
   let textAtArea = document.getElementById(
     "textarea-fifth"
@@ -72,7 +78,6 @@ if (window.location.pathname === fifthPage) {
 
   let result = document.getElementById("result")! as HTMLElement;
   let limitText = 130;
-
   result.textContent = 0 + "/" + limitText;
 
   textAtArea.addEventListener("input", () => {
@@ -83,6 +88,12 @@ if (window.location.pathname === fifthPage) {
       result.style.color = "red";
     } else {
       result.style.color = "rgba(0, 0, 0, 0.35)";
+    }
+
+    if (txtLength > 0) {
+      nextButton.disabled = false;
+    } else if (txtLength === 0) {
+      nextButton.disabled = true;
     }
   });
 }

@@ -38,5 +38,19 @@ if (window.location.pathname === fifthPage) {
     fifthSkipButton.addEventListener("click", () => {
         pageNavigate("/sixth-page");
     });
+    let textAtArea = document.getElementById("textarea-fifth");
+    let result = document.getElementById("result");
+    let limitText = 130;
+    result.textContent = 0 + "/" + limitText;
+    textAtArea.addEventListener("input", () => {
+        let txtLength = textAtArea.value.length;
+        result.textContent = txtLength + "/" + 130;
+        if (txtLength >= 120) {
+            result.style.color = "red";
+        }
+        else {
+            result.style.color = "rgba(0, 0, 0, 0.35)";
+        }
+    });
 }
 //# sourceMappingURL=app.js.map

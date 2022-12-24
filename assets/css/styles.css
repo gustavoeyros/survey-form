@@ -312,6 +312,12 @@ input[type="checkbox"]:hover{
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25);
 }
+.textarea-field p{
+    text-align: right;
+    padding-right: 10%;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.35);
+}
 .buttons-fifth{
     display: flex;
     flex-direction: column;

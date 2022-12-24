@@ -11,6 +11,8 @@ function pageNavigate(url: String) {
   window.location.href = `${rootRoute}${url}.html`;
 }
 
+// -------------------------- NAVIGATION ------------------------------
+
 //first page
 if (window.location.pathname === firstPage) {
   const letsGoButton = document.getElementById(
@@ -61,5 +63,26 @@ if (window.location.pathname === fifthPage) {
 
   fifthSkipButton.addEventListener("click", () => {
     pageNavigate("/sixth-page");
+  });
+
+  // Character Counter
+  let textAtArea = document.getElementById(
+    "textarea-fifth"
+  )! as HTMLTextAreaElement;
+
+  let result = document.getElementById("result")! as HTMLElement;
+  let limitText = 130;
+
+  result.textContent = 0 + "/" + limitText;
+
+  textAtArea.addEventListener("input", () => {
+    let txtLength = textAtArea.value.length;
+    result.textContent = txtLength + "/" + 130;
+
+    if (txtLength >= 120) {
+      result.style.color = "red";
+    } else {
+      result.style.color = "rgba(0, 0, 0, 0.35)";
+    }
   });
 }

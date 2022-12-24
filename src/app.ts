@@ -79,6 +79,30 @@ if (window.location.pathname === fourthPage) {
   fourthSkipButton.addEventListener("click", () => {
     pageNavigate("/fifth-page");
   });
+
+  const nextButton = document.getElementById(
+    "nextButton"
+  )! as HTMLButtonElement;
+
+  //check checkbox
+  let countCheck = 0;
+  const checkBox = document.querySelectorAll("input[type='checkbox']");
+  const verifyCheckBox = checkBox.forEach((input: any) => {
+    input.addEventListener("click", () => {
+      if (input.checked) {
+        countCheck++;
+        if (countCheck >= 1) {
+          nextButton.disabled = false;
+        }
+      } else {
+        countCheck--;
+        console.log(countCheck);
+        if (countCheck == 0) {
+          nextButton.disabled = true;
+        }
+      }
+    });
+  });
 }
 
 //fifth page

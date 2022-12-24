@@ -65,6 +65,9 @@ if (window.location.pathname === fourthPage) {
             }
         });
     });
+    nextButton.addEventListener("click", () => {
+        pageNavigate("/fifth-page");
+    });
 }
 if (window.location.pathname === fifthPage) {
     const fifthSkipButton = document.getElementById("fifth-skip-btn");

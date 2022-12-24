@@ -103,6 +103,10 @@ if (window.location.pathname === fourthPage) {
       }
     });
   });
+
+  nextButton.addEventListener("click", () => {
+    pageNavigate("/fifth-page");
+  });
 }
 
 //fifth page

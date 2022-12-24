@@ -17,18 +17,18 @@
         <article class="third-page">
             <div class="status-container">
                 <label for="options" class="options-title"><div class="arrow"></div>What is the status of your account?</label>
-                <select name="options" id="options" class="options">
-                    <option value="none" selected disabled hidden>Select an option</option>
+                <select name="options" id="options" class="options" required>
+                    <option value="" selected disabled hidden>Select an option</option>
                     <option value="not-created-account" id="not-created-account">I have not created an account yet.</option>
                     <option value="account-created">I already have an account</option>
                     <option value="create-later">I want to create later</option>
-                </select>
+                </select>   
             </div>
 
             <div class="select-container">
                 <p>In which financial markets do you operate?</p>
 
-                <form class="third-form">
+            <div class="third-form">
                 <div class="select-options">
                 <label for="stock-market">stock market</label>
                 <input type="radio" id="stock-market" name="options-form">
@@ -52,8 +52,8 @@
                 <div class="select-options">
                 <label for="criptocurrency-market">criptocurrency market</label>
                 <input type="radio" id="criptocurrency-market" name="options-form">
-                </div>
-                </form>
+            </div>
+            </div>
             </div>
 
             <div class="buttons-third">

@@ -1065,6 +1065,12 @@ display: flex;
         width: 100%;
     }
 
+    /*Success Page*/
+    .success-desc{
+        padding-right: 5%;
+        padding-left: 5%;
+        width: 50%;
+    }
     
 }
 

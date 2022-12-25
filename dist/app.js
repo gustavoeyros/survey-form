@@ -132,8 +132,5 @@ if (window.location.pathname === successPage) {
     const successTitle = document.getElementById("success-title");
     const nameStorage = localStorage.getItem("name");
     successTitle.innerHTML = `Welcome, ${nameStorage}!`;
-    setTimeout(() => {
-        window.location.href = "../";
-    }, 5000);
 }
 //# sourceMappingURL=app.js.map

@@ -43,17 +43,54 @@ if (window.location.pathname === thirdPage) {
     pageNavigate("/fourth-page");
   });
 
-  //check radio
+  //check radio and select
 
-  const radiosButtons = document.querySelectorAll(
-    "input[name='options-form']"
-  )! as NodeListOf<Element>;
+  const stockMarket = document.getElementById(
+    "stock-market"
+  )! as HTMLInputElement;
+  const foreignExchange = document.getElementById(
+    "foreign-exchange"
+  )! as HTMLInputElement;
+  const commodity = document.getElementById("commodity")! as HTMLInputElement;
+  const bondMarket = document.getElementById(
+    "bond-market"
+  )! as HTMLInputElement;
+  const criptoCurrency = document.getElementById(
+    "criptocurrency-market"
+  )! as HTMLInputElement;
 
   const nextButton = document.querySelector(
     ".nextButton"
   )! as HTMLButtonElement;
 
-  const teste: any = document.getElementsByName("options-form")!;
+  const radiosButtons = document.querySelectorAll("input[type='radio']");
+  const selectInput = document.getElementById("options")! as HTMLSelectElement;
+
+  let changeSelect: any = selectInput.addEventListener("change", () => {
+    if (selectInput.options[selectInput.selectedIndex].value !== "") {
+      changeSelect = true;
+    }
+
+    radiosButtons.forEach((x: any) => {
+      if (
+        stockMarket.checked ||
+        foreignExchange.checked ||
+        commodity.checked ||
+        bondMarket.checked ||
+        criptoCurrency.checked
+      ) {
+        nextButton.disabled = false;
+      }
+    });
+  });
+
+  radiosButtons.forEach((input: any) => {
+    input.addEventListener("click", () => {
+      if (changeSelect) {
+        nextButton.disabled = false;
+      }
+    });
+  });
 }
 
 //fourth page
@@ -142,13 +179,21 @@ if (window.location.pathname === fifthPage) {
 
 //sixth page
 if (window.location.pathname === sixthPage) {
+  const form = document.getElementById("sixth-form") as HTMLFormElement;
   const submit = document.getElementById("submit")! as HTMLInputElement;
+  const fullName = document.getElementById("fullname")! as HTMLInputElement;
+  const email = document.getElementById("email")! as HTMLInputElement;
+  const age = document.getElementById("age")! as HTMLInputElement;
+  const regExName = /[0-9]/g;
 
-  submit.addEventListener("click", (e) => {
-    e.preventDefault();
-    const fullName = document.getElementById("fullname")! as HTMLInputElement;
-    const email = document.getElementById("email")! as HTMLInputElement;
-    const age = document.getElementById("age")! as HTMLInputElement;
-    console.log(typeof fullName.value);
+  fullName.addEventListener("input", (e: any) => {
+    let nameValue = e.target.value;
+    let isValid = regExName.test(nameValue);
+    if (!isValid) {
+      fullName.classList.add("input-field-error");
+    } else {
+      fullName.classList.remove("input-field-error");
+      fullName.classList.add("input-field-success");
+    }
   });
 }

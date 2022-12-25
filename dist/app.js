@@ -26,9 +26,35 @@ if (window.location.pathname === thirdPage) {
     thirdSkipButton.addEventListener("click", () => {
         pageNavigate("/fourth-page");
     });
-    const radiosButtons = document.querySelectorAll("input[name='options-form']");
+    const stockMarket = document.getElementById("stock-market");
+    const foreignExchange = document.getElementById("foreign-exchange");
+    const commodity = document.getElementById("commodity");
+    const bondMarket = document.getElementById("bond-market");
+    const criptoCurrency = document.getElementById("criptocurrency-market");
     const nextButton = document.querySelector(".nextButton");
-    const teste = document.getElementsByName("options-form");
+    const radiosButtons = document.querySelectorAll("input[type='radio']");
+    const selectInput = document.getElementById("options");
+    let changeSelect = selectInput.addEventListener("change", () => {
+        if (selectInput.options[selectInput.selectedIndex].value !== "") {
+            changeSelect = true;
+        }
+        radiosButtons.forEach((x) => {
+            if (stockMarket.checked ||
+                foreignExchange.checked ||
+                commodity.checked ||
+                bondMarket.checked ||
+                criptoCurrency.checked) {
+                nextButton.disabled = false;
+            }
+        });
+    });
+    radiosButtons.forEach((input) => {
+        input.addEventListener("click", () => {
+            if (changeSelect) {
+                nextButton.disabled = false;
+            }
+        });
+    });
 }
 if (window.location.pathname === fourthPage) {
     const fourthSkipButton = document.getElementById("fourth-skip-btn");
@@ -90,13 +116,22 @@ if (window.location.pathname === fifthPage) {
     });
 }
 if (window.location.pathname === sixthPage) {
+    const form = document.getElementById("sixth-form");
     const submit = document.getElementById("submit");
-    submit.addEventListener("click", (e) => {
-        e.preventDefault();
-        const fullName = document.getElementById("fullname");
-        const email = document.getElementById("email");
-        const age = document.getElementById("age");
-        console.log(typeof fullName.value);
+    const fullName = document.getElementById("fullname");
+    const email = document.getElementById("email");
+    const age = document.getElementById("age");
+    const regExName = /[0-9]/g;
+    fullName.addEventListener("input", (e) => {
+        let nameValue = e.target.value;
+        let isValid = regExName.test(nameValue);
+        if (!isValid) {
+            fullName.classList.add("input-field-error");
+        }
+        else {
+            fullName.classList.remove("input-field-error");
+            fullName.classList.add("input-field-success");
+        }
     });
 }
 //# sourceMappingURL=app.js.map

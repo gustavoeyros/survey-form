@@ -26,26 +26,16 @@ if (window.location.pathname === thirdPage) {
     thirdSkipButton.addEventListener("click", () => {
         pageNavigate("/fourth-page");
     });
-    let nextButton = document.getElementById("nextButton");
-    nextButton.addEventListener("click", () => {
-        pageNavigate("/fourth-page");
-    });
     const radiosButtons = document.querySelectorAll("input[name='options-form']");
-    const checkRadio = radiosButtons.forEach((input) => {
-        input.addEventListener("click", () => {
-            if (input) {
-                nextButton.disabled = false;
-            }
-        });
-    });
-    const optionsSelect = document.getElementById("options");
+    const nextButton = document.querySelector(".nextButton");
+    const formTeste = document.getElementById("the-form");
 }
 if (window.location.pathname === fourthPage) {
     const fourthSkipButton = document.getElementById("fourth-skip-btn");
     fourthSkipButton.addEventListener("click", () => {
         pageNavigate("/fifth-page");
     });
-    const nextButton = document.getElementById("nextButton");
+    const nextButton = document.querySelector(".nextButton");
     let countCheck = 0;
     const checkBox = document.querySelectorAll("input[type='checkbox']");
     const verifyCheckBox = checkBox.forEach((input) => {
@@ -97,6 +87,16 @@ if (window.location.pathname === fifthPage) {
         else if (txtLength === 0) {
             nextButton.disabled = true;
         }
+    });
+}
+if (window.location.pathname === sixthPage) {
+    const submit = document.getElementById("submit");
+    submit.addEventListener("click", (e) => {
+        e.preventDefault();
+        const fullName = document.getElementById("fullname");
+        const email = document.getElementById("email");
+        const age = document.getElementById("age");
+        console.log(typeof fullName.value);
     });
 }
 //# sourceMappingURL=app.js.map

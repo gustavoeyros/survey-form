@@ -128,6 +128,11 @@ a{
 
 
 /*Third Page*/
+.third-page form{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
 .third-page{
     display: flex;
     flex-direction: column;
@@ -313,7 +318,7 @@ input[type="checkbox"]:hover{
     border: 1px solid rgba(0, 0, 0, 0.25);
     font-size: 18px;
 }
-#nextButton:disabled{
+.nextButton:disabled{
     color: white;
     background-color: rgba(0, 0, 0, 0.25);
     cursor: auto;
@@ -375,16 +380,17 @@ input[type="checkbox"]:hover{
 }
 .input-field{
     border: 1px solid rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.25);
+    color: black;
     border-radius: 20px;
     width: 60%;
     height: 5.2rem;
     padding: 2rem;
     font-size: 2.7rem;
+    outline: 0;
 }
 .input-field-age{
     border: 1px solid rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.25);
+    color: black;
     border-radius: 20px;
     width: 20%;
     height: 1rem;
@@ -517,7 +523,6 @@ input[type="checkbox"]:hover{
 
 
 /* Third Page */
-
 .third-page{
     display: flex;
     flex-direction: column;
@@ -733,7 +738,7 @@ display: flex;
 }
 .input-field{
     border: 1px solid rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.25);
+    color: black;
     border-radius: 20px;
     width: 80%;
     height: 3.3rem;
@@ -742,12 +747,13 @@ display: flex;
 }
 .input-field-age{
     border: 1px solid rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.25);
+    color: black;
     border-radius: 20px;
     width: 30%;
     height: 3.3rem;
     padding-left: 1.5rem;
-    font-size: 2.7rem;
+    font-size: 1.5rem;
+    outline: 0;
 }
 
 .buttons-sixth{

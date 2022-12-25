@@ -15,6 +15,7 @@
         </figure>
 
         <article class="third-page">
+            <form action="./fourth-page.html" id="the-form">
             <div class="status-container">
                 <label for="options" class="options-title"><div class="arrow"></div>What is the status of your account?</label>
                 <select name="options" id="options" class="options" required>
@@ -31,27 +32,27 @@
             <div class="third-form">
                 <div class="select-options">
                 <label for="stock-market">stock market</label>
-                <input type="radio" id="stock-market" name="options-form">
+                <input type="radio" id="stock-market" name="options-form" required>
                 </div>
 
                 <div class="select-options">
                 <label for="foreign-exchange">foreign exchange</label>
-                <input type="radio" id="foreign-exchange" name="options-form">
+                <input type="radio" id="foreign-exchange" name="options-form" required>
                 </div>
 
                 <div class="select-options">
                 <label for="commodity">commodity</label>
-                <input type="radio" id="commodity" name="options-form">
+                <input type="radio" id="commodity" name="options-form" required>
                 </div>
                 
                 <div class="select-options">
                 <label for="bond-market">bond market</label>
-                <input type="radio" id="bond-market" name="options-form">
+                <input type="radio" id="bond-market" name="options-form" required>
                 </div>
 
                 <div class="select-options">
                 <label for="criptocurrency-market">criptocurrency market</label>
-                <input type="radio" id="criptocurrency-market" name="options-form">
+                <input type="radio" id="criptocurrency-market" name="options-form" required>
             </div>
             </div>
             </div>
@@ -59,10 +60,11 @@
             <div class="buttons-third">
             <div class="first-row-buttons">
                 <button class="btn" onclick="window.history.back()">Back</button>
-                <button class="btn" id="nextButton" disabled>Next</button>
+                <button class="btn nextButton" type="submit">Next</button>
             </div>
-            <button class="btn btn-skip" id="third-skip-btn">Skip</button>
+            <button class="btn btn-skip" id="third-skip-btn" type="submit">Skip</button>
             </div>
+            </form>
         </article>
 
     </main>

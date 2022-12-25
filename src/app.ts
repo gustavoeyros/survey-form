@@ -202,4 +202,8 @@ if (window.location.pathname === successPage) {
   )! as HTMLElement;
   const nameStorage = localStorage.getItem("name");
   successTitle.innerHTML = `Welcome, ${nameStorage}!`;
+
+  setTimeout(() => {
+    window.location.href = "../";
+  }, 5000);
 }

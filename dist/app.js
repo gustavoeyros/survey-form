@@ -28,7 +28,7 @@ if (window.location.pathname === thirdPage) {
     });
     const radiosButtons = document.querySelectorAll("input[name='options-form']");
     const nextButton = document.querySelector(".nextButton");
-    const formTeste = document.getElementById("the-form");
+    const teste = document.getElementsByName("options-form");
 }
 if (window.location.pathname === fourthPage) {
     const fourthSkipButton = document.getElementById("fourth-skip-btn");
@@ -64,7 +64,7 @@ if (window.location.pathname === fifthPage) {
     fifthSkipButton.addEventListener("click", () => {
         pageNavigate("/sixth-page");
     });
-    let nextButton = document.getElementById("nextButton");
+    const nextButton = document.querySelector(".nextButton");
     nextButton.addEventListener("click", () => {
         pageNavigate("/sixth-page");
     });

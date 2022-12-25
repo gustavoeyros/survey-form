@@ -53,7 +53,7 @@ if (window.location.pathname === thirdPage) {
     ".nextButton"
   )! as HTMLButtonElement;
 
-  const formTeste = document.getElementById("the-form")! as HTMLFormElement;
+  const teste: any = document.getElementsByName("options-form")!;
 }
 
 //fourth page
@@ -105,7 +105,9 @@ if (window.location.pathname === fifthPage) {
     pageNavigate("/sixth-page");
   });
 
-  let nextButton = document.getElementById("nextButton")! as HTMLButtonElement;
+  const nextButton = document.querySelector(
+    ".nextButton"
+  )! as HTMLButtonElement;
 
   nextButton.addEventListener("click", () => {
     pageNavigate("/sixth-page");

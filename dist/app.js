@@ -6,6 +6,7 @@ const thirdPage = `${rootRoute}/third-page.html`;
 const fourthPage = `${rootRoute}/fourth-page.html`;
 const fifthPage = `${rootRoute}/fifth-page.html`;
 const sixthPage = `${rootRoute}/sixth-page.html`;
+const successPage = `${rootRoute}/success.html`;
 function pageNavigate(url) {
     window.location.href = `${rootRoute}${url}.html`;
 }
@@ -117,21 +118,19 @@ if (window.location.pathname === fifthPage) {
 }
 if (window.location.pathname === sixthPage) {
     const form = document.getElementById("sixth-form");
-    const submit = document.getElementById("submit");
+    const submitButton = document.querySelector(".submitButton");
     const fullName = document.getElementById("fullname");
     const email = document.getElementById("email");
     const age = document.getElementById("age");
-    const regExName = /[0-9]/g;
-    fullName.addEventListener("input", (e) => {
-        let nameValue = e.target.value;
-        let isValid = regExName.test(nameValue);
-        if (!isValid) {
-            fullName.classList.add("input-field-error");
-        }
-        else {
-            fullName.classList.remove("input-field-error");
-            fullName.classList.add("input-field-success");
-        }
+    submitButton.addEventListener("click", () => {
+        localStorage.setItem("name", fullName.value);
+        localStorage.setItem("email", email.value);
+        localStorage.setItem("age", age.value);
     });
+}
+if (window.location.pathname === successPage) {
+    const successTitle = document.getElementById("success-title");
+    const nameStorage = localStorage.getItem("name");
+    successTitle.innerHTML = `Welcome, ${nameStorage}!`;
 }
 //# sourceMappingURL=app.js.map

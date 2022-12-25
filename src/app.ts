@@ -6,7 +6,7 @@ const thirdPage: String = `${rootRoute}/third-page.html`;
 const fourthPage: String = `${rootRoute}/fourth-page.html`;
 const fifthPage: String = `${rootRoute}/fifth-page.html`;
 const sixthPage: String = `${rootRoute}/sixth-page.html`;
-
+const successPage: String = `${rootRoute}/success.html`;
 function pageNavigate(url: String) {
   window.location.href = `${rootRoute}${url}.html`;
 }
@@ -179,21 +179,27 @@ if (window.location.pathname === fifthPage) {
 
 //sixth page
 if (window.location.pathname === sixthPage) {
+  //regex validation
   const form = document.getElementById("sixth-form") as HTMLFormElement;
-  const submit = document.getElementById("submit")! as HTMLInputElement;
+  const submitButton = document.querySelector(
+    ".submitButton"
+  )! as HTMLInputElement;
   const fullName = document.getElementById("fullname")! as HTMLInputElement;
   const email = document.getElementById("email")! as HTMLInputElement;
   const age = document.getElementById("age")! as HTMLInputElement;
-  const regExName = /[0-9]/g;
 
-  fullName.addEventListener("input", (e: any) => {
-    let nameValue = e.target.value;
-    let isValid = regExName.test(nameValue);
-    if (!isValid) {
-      fullName.classList.add("input-field-error");
-    } else {
-      fullName.classList.remove("input-field-error");
-      fullName.classList.add("input-field-success");
-    }
+  submitButton.addEventListener("click", () => {
+    localStorage.setItem("name", fullName.value);
+    localStorage.setItem("email", email.value);
+    localStorage.setItem("age", age.value);
   });
+}
+//success page
+
+if (window.location.pathname === successPage) {
+  const successTitle: any = document.getElementById(
+    "success-title"
+  )! as HTMLElement;
+  const nameStorage = localStorage.getItem("name");
+  successTitle.innerHTML = `Welcome, ${nameStorage}!`;
 }

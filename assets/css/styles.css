@@ -217,10 +217,7 @@ input[type="radio"]:checked{
     background-color: rgba(19, 146, 83, 0.979);
     transition: 0.4s;
 }
-input[type="radio"]:hover{
-    background-color: #3EB25E;
-    transition: 0.4s;
-}
+
 
 
 .first-row-buttons{
@@ -279,18 +276,15 @@ input[type="radio"]:hover{
 input[type="checkbox"]{
     appearance: none;
     background-color: rgba(62, 178, 94, 0.3);
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 2px;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 5px;
 }
 input[type="checkbox"]:checked{
     background-color: rgba(19, 146, 83, 0.979);
     transition: 0.4s;
 }
-input[type="checkbox"]:hover{
-    background-color: #3EB25E;
-    transition: 0.4s;
-}
+
 
 .buttons-fourth{
     display: flex;

@@ -134,6 +134,6 @@ if (window.location.pathname === successPage) {
     successTitle.innerHTML = `Welcome, ${nameStorage}!`;
     setTimeout(() => {
         window.location.href = "../";
-    }, 5000);
+    }, 15000);
 }
 //# sourceMappingURL=app.js.map
